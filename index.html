@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    input{
+  box-shadow:1px 1px 4px gray;
+  width:50%;
+  font-size:20px;
+  padding:7px 10px;
+  border-radius:10px;
+  display:block;
+  margin:40px auto;
+}
+
+input::before{
+  content:"🔍";
+}
+
+.container{
+  border:1px solid red;
+}
+
+.container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.container > div{
+  padding:10px;
+  width:20%
+}
+
+.container > div >div{
+  box-shadow:1px 1px 4px black;
+  border-radius:10px;
+  width:100%;
+  overflow:hidden;
+}
+
+.container > div> div img{
+  width:100%;
+  padding:px;
+}
+  </style>
+</head>
+<body>
+  
+  <input type="text" id="search" placeholder="🔍 Search users" />
+  
+  <div class="container"></div>
+  
+</body>
+  <script src="users.js"></script>
+  <script src="search.js"></script>
+</html>
